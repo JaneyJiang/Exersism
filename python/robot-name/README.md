@@ -1,13 +1,21 @@
-这里主要的关键是，给定的句子，所有的字母是给定句子的子集即可。
-# Pangram
 
-Determine if a sentence is a pangram. A pangram (Greek: 蟺伪谓 纬蟻维渭渭伪, pan gramma,
-"every letter") is a sentence using every letter of the alphabet at least once.
-The best known English pangram is:
-> The quick brown fox jumps over the lazy dog.
+这里有两个点需要注意，一个是字母和数字的结合，二是每个名字都是独一无二的。
+# Robot Name
 
-The alphabet used consists of ASCII letters `a` to `z`, inclusive, and is case
-insensitive. Input will not contain non-ASCII symbols.
+Manage robot factory settings.
+
+When robots come off the factory floor, they have no name.
+
+The first time you boot them up, a random name is generated in the format
+of two uppercase letters followed by three digits, such as RX837 or BC811.
+
+Every once in a while we need to reset a robot to its factory settings,
+which means that their name gets wiped. The next time you ask, it will
+respond with a new random name.
+
+The names must be random: they should not follow a predictable sequence.
+Random names means a risk of collisions. Your solution must ensure that
+every existing robot has a unique name.
 
 ## Exception messages
 
@@ -27,11 +35,11 @@ raise Exception("Meaningful message indicating the source of the error")
 
 To run the tests, run the appropriate command below ([why they are different](https://github.com/pytest-dev/pytest/issues/1629#issue-161422224)):
 
-- Python 2.7: `py.test pangram_test.py`
-- Python 3.4+: `pytest pangram_test.py`
+- Python 2.7: `py.test robot_name_test.py`
+- Python 3.4+: `pytest robot_name_test.py`
 
 Alternatively, you can tell Python to run the pytest module (allowing the same command to be used regardless of Python version):
-`python -m pytest pangram_test.py`
+`python -m pytest robot_name_test.py`
 
 ### Common `pytest` options
 
@@ -43,7 +51,7 @@ For other options, see `python -m pytest -h`
 
 ## Submitting Exercises
 
-Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/pangram` directory.
+Note that, when trying to submit an exercise, make sure the solution is in the `$EXERCISM_WORKSPACE/python/robot-name` directory.
 
 You can find your Exercism workspace by running `exercism debug` and looking for the line that starts with `Workspace`.
 
@@ -52,7 +60,7 @@ please see [Running the Tests](http://exercism.io/tracks/python/tests).
 
 ## Source
 
-Wikipedia [https://en.wikipedia.org/wiki/Pangram](https://en.wikipedia.org/wiki/Pangram)
+A debugging session with Paul Blackwell at gSchool. [http://gschool.it](http://gschool.it)
 
 ## Submitting Incomplete Solutions
 
