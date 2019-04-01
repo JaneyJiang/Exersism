@@ -18,3 +18,4 @@ class HighScores(object):
         personal_report = "That's {} short of your personal best!".format(diff) if diff else "That's your personal best!"
         return latest_report+personal_report
 
+
